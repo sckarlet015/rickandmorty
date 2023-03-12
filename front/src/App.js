@@ -94,7 +94,7 @@ async function getChar(id){
 
   return (
     <div className="App">
-      {location.pathname !== '/' && <Nav onSearch={onSearch} />}
+      {location.pathname !== '/' && <Nav onSearch={onSearch}/>}
       <Routes>
         <Route exact path='/' element={<Form login={login}/>}/>
         <Route path='/Home' 

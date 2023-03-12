@@ -4,7 +4,6 @@ import axios from "axios"
 import style from './Card.module.css';
 
 function Card(props) {
-    console.log(props)
     //Estado local
     const [isFav, setIsFav] = React.useState(false);
     //Función para cambiar de favorito
