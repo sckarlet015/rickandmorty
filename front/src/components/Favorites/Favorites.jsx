@@ -1,7 +1,5 @@
-import Card from "../Card/Card";
+import CardFav from '../CarsFav/CardFav';
 import {useEffect} from 'react'
-import axios from "axios";
-
 
 export function Favorites(props){
     const {arrayfavoritos} = props;
@@ -13,13 +11,14 @@ export function Favorites(props){
     return(
         <div>
         {arrayfavoritos && arrayfavoritos.map(fav => (
-            <Card
+            <CardFav
             name={fav.name}
             id={fav.id}
             key={fav.id}
             gender={fav.gender}
             image={fav.image}
             deleteFav = {props.deleteFav}
+            misFavoritos = {props.misFavoritos}
             />
         ))}
         </div>

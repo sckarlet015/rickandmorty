@@ -78,7 +78,7 @@ function App() {
 }
 //Función delete favorito
 async function deleteFav(id){
-  await axios(`http://localhost:3001/rickandmorty/fav/${id}`)
+  await axios.delete(`http://localhost:3001/rickandmorty/fav/${id}`)
 }
 //Funcion para cerrar la tarjeta del personaje
 const onClose = (id) => {
@@ -105,7 +105,11 @@ async function getChar(id){
           deleteFav={deleteFav}
           />}
         />
-        <Route path='/favorites' element={<Favorites arrayfavoritos={arrayfavoritos} misFavoritos={misFavoritos} deleteFav={deleteFav}/>}/>
+        <Route path='/favorites' 
+        element={<Favorites 
+        arrayfavoritos={arrayfavoritos} 
+        misFavoritos={misFavoritos} 
+        deleteFav={deleteFav}/>}/>
       </Routes>
     </div>
   );
