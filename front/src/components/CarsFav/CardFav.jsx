@@ -8,7 +8,6 @@ function CardFav(props) {
    //Función para cambiar de favorito
    function handleFavorite() {
       props.deleteFav(props.id)
-      props.misFavoritos()
    }
    return (
       <div className={style.DivCard}>

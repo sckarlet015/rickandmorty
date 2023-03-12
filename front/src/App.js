@@ -79,6 +79,7 @@ function App() {
 //Función delete favorito
 async function deleteFav(id){
   await axios.delete(`http://localhost:3001/rickandmorty/fav/${id}`)
+  await misFavoritos();
 }
 //Funcion para cerrar la tarjeta del personaje
 const onClose = (id) => {
