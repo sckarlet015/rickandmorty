@@ -1,5 +1,3 @@
-const axios = require("axios");
-
 const {Character} = require("../DB_connection")
 
 const getCharById = async (req, res) => {

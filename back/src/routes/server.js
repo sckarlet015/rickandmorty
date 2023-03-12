@@ -4,9 +4,11 @@ const server = express();
 const PORT = 3001;
 const saveApiData = require("../controllers/getApiData.js")
 const {sequelize} = require("../DB_connection")
+const cors = require('cors')
 
 
-server.use(express.json())
+server.use(express.json());
+server.use(cors());
 server.use((req, res, next) => {
     res.header('Access-Control-Allow-Origin', '*');
     res.header('Access-Control-Allow-Headers', 'Authorization, X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Allow-Request-Method');
