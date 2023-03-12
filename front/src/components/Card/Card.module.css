@@ -1,0 +1,64 @@
+.DivCard{
+    display: inline-grid;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.808);
+    margin-left: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+.btns{
+    display: inline-flex;
+    justify-content: space-around;
+}
+.ButtonClose{
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    margin-top: 5px;
+    height: 35px;
+    width: 35px;
+    align-content: center;
+}
+.ButtonClose:hover{
+    background-color: white;
+    color: black;
+}
+.fav{
+    background-color: black;
+    border: 1px solid white;
+    height: 35px;
+    width: 35px;
+    align-content: center;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+.fav:hover{
+    background-color: white;
+    color: black;   
+}
+.DivCard h3{
+    text-decoration: none;
+    background-color: #171717;
+    color: white;
+    border-radius: 7px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+.DivCard img{
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+.DivCard img:hover{
+    width: 310px;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-bottom: -10px;
+}
